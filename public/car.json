@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "name": "Sports Car",
+    "secOne": {
+      "id": 1,
+      "name": "Branded sports cars",
+      "price": "1500",
+      "ratings": "5",
+      "image": "https://png.pngitem.com/pimgs/s/212-2122485_transparent-car-toy-transparent-background-car-toy-png.png"
+    },
+    "secTwo": {
+      "id": 3,
+      "name": "mini police car  ",
+      "price": "1700",
+      "ratings": "5",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGYtmqd39te5lxFmCQKF7mvsWGIwu92Vvq851VgU_o&s"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Regular car",
+    "secOne": {
+      "id": 4,
+      "name": "Lego car",
+      "price": "2700",
+      "ratings": "5",
+      "image":"https://wallpaperaccess.com/full/4467624.jpg"
+    },
+    "secTwo": {
+      "id": 5,
+      "name": "Remote control car",
+      "price": "700",
+      "ratings": "5",
+      "image":"https://c0.wallpaperflare.com/preview/618/905/97/car-toy-toy-car-love.jpg"
+    }
+  },
+
+
+  {
+    "id": 3,
+    "name": "Truck and Train",
+    "secOne": {
+      "id": 7,
+      "name": "Monster Truck",
+      "price": "2500",
+      "ratings": "5",
+      "image": "https://media.istockphoto.com/id/1301902202/photo/radio-control-4x4-car.jpg?s=612x612&w=0&k=20&c=eN2NvVBbFygk5R9A1J62UJT7yoBuX_s84khR4Fzb_gE="
+    },
+    "secTwo": {
+      "id": 8,
+      "name": "Locomotive Train ",
+      "price": "1800",
+      "ratings": "5",
+      "image": "https://e1.pxfuel.com/desktop-wallpaper/400/256/desktop-wallpaper-sweet-toy-train-model-trains-thumbnail.jpg"
+    }
+    
+  }
+]
