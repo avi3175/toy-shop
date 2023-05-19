@@ -23,8 +23,9 @@ const{user} = useContext(AuthContext)
     const quantity = form.quantity.value
     const sellerName = form.sellername.value
     const description = form.details.value
+    const subcategory = form.subcategory.value
     const order = {
-        customerName:name,email,price,rating,sellerName
+        customerName:name,email,price,rating,sellerName,subcategory
     }
     console.log(order)
 
@@ -95,6 +96,7 @@ const{user} = useContext(AuthContext)
           <select
             id="subCategory"
             value={subCategory}
+            name='subcategory'
             onChange={(e) => setSubCategory(e.target.value)}
             className="w-full p-2 border border-gray-300 rounded"
           >

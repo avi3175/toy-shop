@@ -13,10 +13,10 @@ const MyToys = () => {
       fetch(url)
       .then(res=>res.json())
       .then(data=>setUtoy(data))
-  },[])
+  },[url])
   return (
     <div>
-      <h1>SPECIFIC TOYS FOR SINGLE USER SHOULD BE SHOWN IN HERE</h1>
+      <h1>SPECIFIC TOYS FOR SINGLE USER SHOULD BE SHOWN IN HERE:{utoy.length}</h1>
     </div>
   );
 }
