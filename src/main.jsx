@@ -17,6 +17,7 @@ import AuthProvider from './providers/AuthProvider';
 import Toys from './Components/Toys';
 import Private from './Components/Private';
 import AddToy from './Components/AddToy';
+import AllToys from './Components/AllToys';
 
 
 const router = createBrowserRouter([
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
       {
         path: '/addtoy',
         element:<Private><AddToy></AddToy></Private>
+      },
+      {
+        path: '/alltoys',
+        element:<AllToys></AllToys>,
+        loader:()=>fetch('http://localhost:5000/addtoy')
       },
       {
         path:"/toys/:id",

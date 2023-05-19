@@ -1,10 +1,13 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const AllToys = () => {
+  const allTheToys = useLoaderData()
+  console.log(allTheToys)
   return (
-    <section className="all-toys">
-      {/* Your all toys content goes here */}
-    </section>
+    <div>
+       <h1>ALL THE TOYS SHOULD HAVE TO BE A TABEULAR FORM:{allTheToys.length}</h1>
+    </div>
   );
 }
 
