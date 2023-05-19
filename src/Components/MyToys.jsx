@@ -55,6 +55,26 @@ const MyToys = () => {
 
 
 
+ const handleConfirm = (id) =>{
+        fetch(`http://localhost:5000/addstoy/${id}`,{
+          method:"PATCH",
+          headers:{
+            "content-type":"application/json"
+          },
+          body:JSON.stringify({status:'confirm'})
+        })
+        .then(res=>res.json())
+        .then(data=>{
+          console.log(data)
+          if(data.modifiedCount>0){
+            // update state
+          }
+        })
+ }
+
+
+
+
 
 
   return (
@@ -74,6 +94,9 @@ const MyToys = () => {
                
                 <button   onClick={()=>handleDelete(t._id)} className="bg-blue-700 hover:bg-rose-700 text-white py-2 px-4 rounded">
                     <p className='font-bold text-3xl text-yellow-400'>DELETE THE TOY</p>
+                </button>
+                <button   onClick={()=>handleDelete(t._id)} className="bg-rose-700 hover:bg-rose-700 text-white py-2 px-4 rounded">
+                    <p className='font-bold text-3xl text-yellow-400'>UPDATE THE TOY</p>
                 </button>
             </div>
         </div>)
