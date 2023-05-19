@@ -19,11 +19,14 @@ const Header = () => {
                     <ul className='flex gap-5'>
                         <li className='text-yellow-400 font-bold text-lg'><Link to="/">HOME</Link></li>
                         <li className='text-yellow-400 font-bold text-lg'><Link to="/blog">BLOGS</Link></li>
-                        <li className='text-yellow-400 font-bold text-lg'><Link to="/toys">ALL TOYS</Link></li>
+                        <li className='text-yellow-400 font-bold text-lg'><Link to="/addtoy">ADD A TOY</Link></li>
+                        {
+                            user?<li className='text-yellow-400 font-bold text-lg'><Link to="/toys">ALL TOYS</Link></li>:<li></li>
+                        }
                         {
                             user ? <li className='text-yellow-400 font-bold text-lg'><Link to="/my-toys">MY TOYS</Link></li> : <li></li>
                         }
-                        <li className='text-yellow-400 font-bold text-lg'><Link to="/add-toy">ADD A TOY</Link></li>
+                       
                     </ul>
                     <ul className='flex gap-5'>
 

@@ -16,6 +16,7 @@ import SignUp from './Components/SignUp';
 import AuthProvider from './providers/AuthProvider';
 import Toys from './Components/Toys';
 import Private from './Components/Private';
+import AddToy from './Components/AddToy';
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <SignUp></SignUp>
+      },
+      {
+        path: '/addtoy',
+        element:<Private><AddToy></AddToy></Private>
       },
       {
         path:"/toys/:id",
