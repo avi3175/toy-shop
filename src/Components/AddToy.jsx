@@ -28,6 +28,7 @@ const{user} = useContext(AuthContext)
         customerName:name,email,price,rating,sellerName,subcategory
     }
     console.log(order)
+    
 
     fetch('http://localhost:5000/addtoy',{
       method:"POST",
@@ -44,6 +45,7 @@ const{user} = useContext(AuthContext)
         alert("POST WELL DONE")
       }
     })
+   
   }
 
 
