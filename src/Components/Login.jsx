@@ -1,8 +1,14 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../providers/AuthProvider';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 const{signIn} = useContext(AuthContext)
+const navigate = useNavigate()
+const location = useLocation()
+console.log(location)
+
+const from = location.state?.from?.pathname || '/'
 
     const handleLogin = (event) =>{
             event.preventDefault()
@@ -17,6 +23,8 @@ const{signIn} = useContext(AuthContext)
             .then(result=>{
                 const user = result.user
                 console.log(user)
+                form.reset()
+                navigate(from,{replace:true})
                 
             })
             .catch(error=>console.log(error))
@@ -44,9 +52,9 @@ const{signIn} = useContext(AuthContext)
                         <input
                             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="username"
-                            type="text"
-                            placeholder="Enter your username"
-                            name='name'
+                            type="email"
+                            placeholder="Enter your email"
+                            name='email'
                         />
                     </div>
                     <div className="mb-6">

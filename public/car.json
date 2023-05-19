@@ -1,59 +1,62 @@
 [
   {
-    "id": 1,
     "name": "Sports Car",
+    "details": "THIS CAR WILL GIVE THE VIBE OF CLASSIC SUPER CAR",
     "secOne": {
-      "id": 1,
+      "toy_id": 1,
       "name": "Branded sports cars",
       "price": "1500",
       "ratings": "5",
+      "detail": "YOU GONNA ENJOT YHE PROTOTYPE OF CLASSIC SUPER CAR",
       "image": "https://png.pngitem.com/pimgs/s/212-2122485_transparent-car-toy-transparent-background-car-toy-png.png"
     },
     "secTwo": {
-      "id": 3,
-      "name": "mini police car  ",
+      "toy_id": 3,
+      "name": "mini police car",
       "price": "1700",
       "ratings": "5",
-      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGYtmqd39te5lxFmCQKF7mvsWGIwu92Vvq851VgU_o&s"
+      "detail": "NOW CHASE THE VIGILENT WITH THIS SUPER POLICE CAR",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGYtmqd39te5lxFmCQKF7mvsWGIwu92Vvq851VgU_o&s"
     }
   },
   {
-    "id": 2,
     "name": "Regular car",
+    "details": "THIS REGULAR CAR IS NOT SO CALLED CASUAL CAR.IT IS JUST SIMPLY THE BEST!",
     "secOne": {
-      "id": 4,
+      "toy_id": 4,
       "name": "Lego car",
       "price": "2700",
       "ratings": "5",
-      "image":"https://wallpaperaccess.com/full/4467624.jpg"
+      "detail": "BUILD THE CAR OF YOUR IMAGINATION AND HAVE FUN",
+      "image": "https://wallpaperaccess.com/full/4467624.jpg"
     },
     "secTwo": {
-      "id": 5,
+      "toy_id": 5,
       "name": "Remote control car",
       "price": "700",
       "ratings": "5",
-      "image":"https://c0.wallpaperflare.com/preview/618/905/97/car-toy-toy-car-love.jpg"
+      "detail": "YOU CAN RACE WITH THIS RADIO CAR.IT IS REALLY HIGH IN RANGE",
+      "image": "https://c0.wallpaperflare.com/preview/618/905/97/car-toy-toy-car-love.jpg"
     }
   },
-
-
   {
-    "id": 3,
     "name": "Truck and Train",
+    "details": "EXPLORE THE TRAIL WITH TRUCK AND TRAIN",
     "secOne": {
-      "id": 7,
+      "toy_id": 7,
       "name": "Monster Truck",
       "price": "2500",
       "ratings": "5",
-      "image": "https://media.istockphoto.com/id/1301902202/photo/radio-control-4x4-car.jpg?s=612x612&w=0&k=20&c=eN2NvVBbFygk5R9A1J62UJT7yoBuX_s84khR4Fzb_gE="
+      "detail": "ONE CAR TO SMASH THEM ...",
+      "image": "https://media.istockphoto.com902202/photo/radio-control-4x4-car.jpg?s=612x612&w=0&k=20&c=eN2NvVBbFygk5R9A1J62UJT7yoBuX_s84khR4Fzb_gE="
     },
     "secTwo": {
-      "id": 8,
+      "toy_id": 8,
       "name": "Locomotive Train ",
       "price": "1800",
       "ratings": "5",
+      "detail": "THIS TRAIN PRODUCE ELECTRICITY WHILE ON THE TRACK",
       "image": "https://e1.pxfuel.com/desktop-wallpaper/400/256/desktop-wallpaper-sweet-toy-train-model-trains-thumbnail.jpg"
     }
-    
   }
 ]
