@@ -24,7 +24,7 @@ const Header = () => {
                             user?<li className='text-yellow-400 font-bold text-lg'><Link to="/alltoys">ALL TOYS</Link></li>:<li></li>
                         }
                         {
-                            user ? <li className='text-yellow-400 font-bold text-lg'><Link to="/my-toys">MY TOYS</Link></li> : <li></li>
+                            user ? <li className='text-yellow-400 font-bold text-lg'><Link to="/mytoys">MY TOYS</Link></li> : <li></li>
                         }
                        
                     </ul>
