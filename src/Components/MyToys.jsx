@@ -5,7 +5,7 @@ const MyToys = () => {
   const {user} = useContext(AuthContext)
   const [utoy,setUtoy] = useState([])
  console.log(utoy)
-
+ 
 
 
   const url = `http://localhost:5000/addstoy?email=${user.email}`
@@ -15,8 +15,27 @@ const MyToys = () => {
       .then(data=>setUtoy(data))
   },[url])
   return (
-    <div>
+    <div className='flex flex-col justify-between items-center'>
       <h1>SPECIFIC TOYS FOR SINGLE USER SHOULD BE SHOWN IN HERE:{utoy.length}</h1>
+      <div>
+        {
+          utoy.map(t=> <div key={t._id}>
+           
+            <div className="bg-white shadow-xl rounded-sm p-6 mt-10 text-center w-fit flex">
+                <div className="mb-4  p-10 text-right">
+                    <h3 className="text-xl font-bold text-yellow-400">NAME:{t.customerName}</h3>
+                    <h3 className="text-xl font-bold text-lime-400">PRICE:{t.price}</h3>
+                    <h3 className="text-xl font-bold text-rose-600">RATING:{t.rating}</h3>
+                    <h3 className="text-xl font-bold text-sky-700">EMAIL:{t.email}</h3>
+                  </div>
+               
+                <button className="bg-blue-700 hover:bg-rose-700 text-white py-2 px-4 rounded">
+                    <p className='font-bold text-3xl text-yellow-400'>DELETE THE TOY</p>
+                </button>
+            </div>
+        </div>)
+        }
+      </div>
     </div>
   );
 }
