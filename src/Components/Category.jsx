@@ -36,8 +36,8 @@ const Category = ({ toy }) => {
           </div>
 
           <Link to={`/toys/${data._id}`}>
-            <button className="px-4 py-4 bg-gradient-to-r from-indigo-900 to-pink-950">
-              <p className='text-white'>VIEW DETAILS</p>
+            <button className="px-4 py-4 bg-blue-900">
+              <p className='text-yellow-400 font-bold text-2xl'>VIEW DETAILS</p>
             </button>
           </Link>
         </TabPanel>

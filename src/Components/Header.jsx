@@ -20,13 +20,17 @@ const Header = () => {
                         <li className='text-yellow-400 font-bold text-lg'><Link to="/">HOME</Link></li>
                         <li className='text-yellow-400 font-bold text-lg'><Link to="/blog">BLOGS</Link></li>
                         <li className='text-yellow-400 font-bold text-lg'><Link to="/addtoy">ADD A TOY</Link></li>
+
+
                         {
-                            user?<li className='text-yellow-400 font-bold text-lg'><Link to="/alltoys">ALL TOYS</Link></li>:<li></li>
+                            user ? <li className='text-yellow-400 font-bold text-lg'><Link to="/alltoys">ALL TOYS</Link></li> : <li></li>
                         }
                         {
                             user ? <li className='text-yellow-400 font-bold text-lg'><Link to="/mytoys">MY TOYS</Link></li> : <li></li>
                         }
-                       
+
+                        <li className='font-bold text-2xl text-yellow-300'> ★·.·´¯`·.·★ 𝙂𝙍𝙀𝘼𝙏 𝘼𝙉𝘿 𝙋𝙀𝙍𝙁𝙀𝘾𝙏 𝙏𝙊𝙔 ★·.·´¯`·.·★</li>
+
                     </ul>
                     <ul className='flex gap-5'>
 
