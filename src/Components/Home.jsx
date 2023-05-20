@@ -5,6 +5,7 @@ import Banner from './Banner';
 import Gallery from './Gallery';
 import ShopByCategories from './ShopByCategories';
 import Review from './Review';
+import Extra from './Extra';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Gallery></Gallery>
             <ShopByCategories></ShopByCategories>
             <Review></Review>
+            <Extra></Extra>
         </div>
     );
 };
