@@ -5,7 +5,7 @@ const Extra = () => {
         <div>
             <div className="bg-gray-100 py-8">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-semibold text-center mb-4">Explore Our Toy Selection</h2>
+                    <h2 className="text-3xl font-semibold text-center mb-4">Explore Our future Toy </h2>
                     <div className="flex flex-wrap justify-center">
                         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-4">
                             <img src="https://c4.wallpaperflare.com/wallpaper/132/223/641/delorean-dmc-delorean-car-car-show-back-to-the-future-hd-wallpaper-thumb.jpg" alt="Toy 1" className="w-full h-48 object-fit mb-2" />
