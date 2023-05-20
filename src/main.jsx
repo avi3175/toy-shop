@@ -19,6 +19,7 @@ import Private from './Components/Private';
 import AddToy from './Components/AddToy';
 import AllToys from './Components/AllToys';
 import MyToys from './Components/MyToys';
+import PageNotFound from './Components/PageNotFound';
 
 
 const router = createBrowserRouter([
@@ -62,7 +63,12 @@ const router = createBrowserRouter([
         loader:({params})=>fetch(`http://localhost:5000/toys/${params.id}`)
       }
     ]
+  },
+  {
+    path:"*",
+    element:<PageNotFound></PageNotFound>
   }
+
 
 ]);
 
