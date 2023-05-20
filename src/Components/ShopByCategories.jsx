@@ -13,7 +13,7 @@ const ShopByCategories = () => {
     }, [])
     // console.log(toys)
     return (
-        <div className='text-center '>
+        <div className='text-center mt-10 mb-5 '>
             <h1 className='bg-yellow-400 text-6xl font-bold mb-10 w-fit mx-auto p-10 rounded-sm'>SHOP BY CATEGORIES</h1>
             <div className='flex justify-center items-center'>
                 {
