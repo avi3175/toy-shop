@@ -55,12 +55,13 @@ const router = createBrowserRouter([
       {
         path: '/alltoys',
         element:<AllToys></AllToys>,
-        loader:()=>fetch('http://localhost:5000/addtoy')
+        loader:()=>fetch('https://great-and-perfect-toy-server.vercel.app/addtoy')
+        
       },
       {
         path:"/toys/:id",
         element:<Private><Toys></Toys></Private>,
-        loader:({params})=>fetch(`http://localhost:5000/toys/${params.id}`)
+        loader:({params})=>fetch(`https://great-and-perfect-toy-server.vercel.app/toys/${params.id}`)
       }
     ]
   },

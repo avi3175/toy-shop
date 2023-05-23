@@ -10,7 +10,7 @@ const MyToys = () => {
   //  const handleDelete = (id) =>{
   //   const proceed = confirm("DO YOU REALLY WANNA DELETE")
   //   if(proceed){
-  //     fetch(`http://localhost:5000/addstoy/${id}`,{
+  //     fetch(`https://great-and-perfect-toy-server.vercel.app/addstoy/${id}`,{
   //       method:"DELETE",
 
   //     })
@@ -25,7 +25,7 @@ const MyToys = () => {
   //   }
   //  }
 
-  const url = `http://localhost:5000/addstoy?email=${user.email}`
+  const url = `https://great-and-perfect-toy-server.vercel.app/addstoy?email=${user.email}`
   useEffect(() => {
     fetch(url)
       .then(res => res.json())
@@ -37,7 +37,7 @@ const MyToys = () => {
   const handleDelete = (id) => {
     const proceed = confirm("DO YOU REALLY WANNA DELETE")
     if (proceed) {
-      fetch(`http://localhost:5000/addstoy/${id}`, {
+      fetch(`https://great-and-perfect-toy-server.vercel.app/addstoy/${id}`, {
         method: "DELETE",
 
       })
@@ -56,7 +56,7 @@ const MyToys = () => {
 
 
   const handleConfirm = (id) => {
-    fetch(`http://localhost:5000/addstoy/${id}`, {
+    fetch(`https://great-and-perfect-toy-server.vercel.app/addstoy/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json"

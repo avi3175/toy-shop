@@ -30,7 +30,7 @@ const{user} = useContext(AuthContext)
     console.log(order)
     
 
-    fetch('http://localhost:5000/addtoy',{
+    fetch('https://great-and-perfect-toy-server.vercel.app/addtoy',{
       method:"POST",
       headers:{
         "content-type":"application/json",
