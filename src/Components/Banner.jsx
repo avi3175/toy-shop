@@ -3,7 +3,7 @@ import car from '../../public/image/perfect.jpg'
 import lego from '../../public/image/lego.webp'
 const Banner = () => {
   return (
-    <div className='flex justify-between mt-10'>
+    <div className='flex justify-between lg:flex-row md:flex-row sm:flex-col-reverse mt-10'>
       <div className='w-[350px]'><img src="https://www.lego.com/cdn/cs/catalog/assets/blt7b9439499134e234/1/AID901144GL_CITY_Frank_Lupell_Character-fullheight_1000x1000.png" alt="" /></div>
 
       <div className="bg-gradient-to-r from-indigo-900 to-pink-950 w-1/2 absolute mx-80">

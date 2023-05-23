@@ -15,7 +15,7 @@ const ShopByCategories = () => {
     return (
         <div className='text-center mt-10 mb-5 '>
             <h1 className='bg-yellow-400 text-6xl font-bold mb-10 w-fit mx-auto p-10 rounded-sm'>SHOP BY CATEGORIES</h1>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center lg:flex-row md:flex-row sm"flex-col'>
                 {
                     toys.map(toy => <Category
                         keys={toy.id}
