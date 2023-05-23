@@ -6,25 +6,6 @@ const MyToys = () => {
   const [utoy, setUtoy] = useState([])
   console.log(utoy)
 
-
-  //  const handleDelete = (id) =>{
-  //   const proceed = confirm("DO YOU REALLY WANNA DELETE")
-  //   if(proceed){
-  //     fetch(`https://great-and-perfect-toy-server.vercel.app/addstoy/${id}`,{
-  //       method:"DELETE",
-
-  //     })
-  //     .then(res=>res.json())
-  //     .then(data=>{
-  //       console.log(data)
-  //       if(data.deletedCount>0){
-  //         alert('DELETE SUCCESSFULLY!')
-  //         const remaining = 
-  //       }
-  //     })
-  //   }
-  //  }
-
   const url = `https://great-and-perfect-toy-server.vercel.app/addstoy?email=${user.email}`
   useEffect(() => {
     fetch(url)

@@ -15,8 +15,8 @@ const Header = () => {
 
             <header className='bg-blue-700 py-2'>
 
-                <nav className='flex justify-between mx-5 items-center mt-5 mb-10'>
-                    <ul className='flex gap-5'>
+                <nav className='flex justify-between mx-5 items-center mt-5 mb-10 lg:flex-row sm:flex-col-reverse'>
+                    <ul className='flex gap-5 items-center lg:flex-row md:flex-row sm:flex-col '>
                         <li className='text-yellow-400 font-bold text-lg'><Link to="/">HOME</Link></li>
                         <li className='text-yellow-400 font-bold text-lg'><Link to="/blog">BLOGS</Link></li>
                         <li className='text-yellow-400 font-bold text-lg'><Link to="/addtoy">ADD A TOY</Link></li>
@@ -32,7 +32,7 @@ const Header = () => {
                         <li className='font-bold text-2xl text-yellow-300'> ★·.·´¯`·.·★ 𝙂𝙍𝙀𝘼𝙏 𝘼𝙉𝘿 𝙋𝙀𝙍𝙁𝙀𝘾𝙏 𝙏𝙊𝙔 ★·.·´¯`·.·★</li>
 
                     </ul>
-                    <ul className='flex gap-5'>
+                    <ul className='flex justify-between items-center gap-5 lg:flex-row md:flex-row sm:flex-col'>
 
 
                         {
